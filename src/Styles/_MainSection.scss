@@ -1,0 +1,74 @@
+.main-container {
+  position: relative;
+  display: flex;
+  background-color: #eceaea;
+  padding: 15px 0 15px 0;
+  margin: 15rem auto 0 auto;
+  flex-direction: column;
+
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 5rem auto;
+
+    .input-container {
+      display: flex;
+      margin: auto;
+      padding: 3rem;
+      justify-content: space-between;
+      position: absolute;
+      background-position: center;
+      background: $secondary-color;
+      background-image: url(../images/bg-boost-desktop.svg);
+      width: 40vw;
+      top: -3rem;
+      border-radius: 1rem;
+      align-items: center;
+      z-index: 2;
+
+      .input {
+        width: 80%;
+        padding: 1rem 2rem;
+
+        input {
+          outline: none;
+          width: 100%;
+          border: none;
+          font-size: 1.6rem;
+          padding: 1.4rem 2rem;
+          border-radius: 0.8rem;
+        }
+      }
+
+      .shortenLink {
+        padding: 1.2rem 2rem;
+        background-color: $primary-color;
+        border-radius: 1rem;
+        font-size: $font-size;
+        font-weight: $font-weight-1;
+        width: fit-content;
+        color: $color-white;
+        cursor: pointer;
+        letter-spacing: 0.05rem;
+        border: none;
+        outline: none;
+      }
+    }
+  }
+  .caption-container {
+    text-align: center;
+    width: 35vw;
+    margin: 2rem auto;
+
+    h2 {
+      font-weight: $font-weight-2;
+      font-size: 3rem;
+    }
+
+    p {
+      font-size: $font-size;
+      color: $grayish-color;
+      font-weight: $font-weight-1;
+    }
+  }
+}

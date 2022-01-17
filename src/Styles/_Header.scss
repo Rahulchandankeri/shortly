@@ -1,0 +1,68 @@
+.Header {
+  display: flex;
+  border: none;
+  padding: 3.5rem 0 1.5rem 0;
+  justify-content: space-between;
+  width: 80%;
+  align-items: center;
+  margin: auto;
+
+  .logo {
+    .logo-heading {
+      font-family: $font-main;
+      font-size: 3rem;
+      font-weight: $font-weight-2;
+    }
+  }
+
+  .header-links {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+
+    .Section-left {
+      display: flex;
+      list-style: none;
+      outline: none;
+      a {
+        text-decoration: none;
+        font-size: $font-size;
+        font-weight: $font-weight-1;
+        color: $grayish-color;
+        cursor: pointer;
+        margin: 1vw;
+
+        &:hover {
+          color: $Dark-Violet-color;
+        }
+      }
+    }
+  }
+
+  .section-right {
+    margin-right: 7vw;
+
+    a {
+      text-decoration: none;
+      font-size: $font-size;
+      font-weight: $font-weight-1;
+      color: $grayish-color;
+      cursor: pointer;
+      margin: 1vw;
+
+      &:hover {
+        color: $Dark-Violet-color;
+      }
+    }
+    .Signup-btn {
+      padding: 1rem 2rem;
+      border-radius: 10rem;
+      background-color: $primary-color;
+      color: $color-white;
+
+      &:hover {
+        color: $color-white;
+      }
+    }
+  }
+}

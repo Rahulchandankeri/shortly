@@ -1,0 +1,36 @@
+.slider-section {
+  width: 80%;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  margin: 15rem auto;
+
+  .article-left {
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    width: 45%;
+    .main-caption {
+      font-size: 7rem;
+      font-weight: $font-weight-2;
+      color: $Dark-Violet-color;
+      line-height: 1;
+    }
+
+    .secondary-caption {
+      font-size: $font-size;
+      color: $grayish-color;
+      font-weight: $font-weight-1;
+    }
+    @include getStartedBtn;
+  }
+  .illustration-container {
+    position: relative;
+    width: 55%;
+    img {
+      width: auto;
+      max-width: 100%;
+      margin-left: 8vw;
+    }
+  }
+}

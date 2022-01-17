@@ -1,0 +1,58 @@
+.card-container {
+  position: relative;
+  display: flex;
+  width: 80%;
+  margin: 8rem auto;
+  justify-content: center;
+
+  .fat-line {
+    position: absolute;
+    background: $primary-color;
+    width: 80%;
+    height: 1rem;
+    position: absolute;
+    top: 10rem;
+  }
+
+  .card {
+    position: relative;
+    background-color: $color-white;
+    margin: 1vw;
+    width: 30%;
+    border-radius: 1rem;
+    padding: 4rem;
+    .icon {
+      position: absolute;
+      top: -4rem;
+      border-radius: 10rem;
+      justify-content: center;
+      width: 8rem;
+      height: 8rem;
+      display: flex;
+      align-items: center;
+      background-color: $secondary-color;
+    }
+
+    h4 {
+      font-size: 2rem;
+      color: $Dark-Violet-color;
+      margin-top: 4rem;
+    }
+
+    p {
+      font-size: $font-size;
+      color: $grayish-color;
+    }
+  }
+  .card--1 {
+    left: 0;
+    top: -7rem;
+  }
+  .card--2 {
+    top: -4rem;
+  }
+  .card--3 {
+    right: 0;
+    top: 0;
+  }
+}
