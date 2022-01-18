@@ -9,7 +9,7 @@
   .wrapper {
     display: flex;
     justify-content: center;
-    margin: 5rem auto;
+    margin: 6.5rem auto;
 
     .input-container {
       display: flex;
@@ -26,6 +26,10 @@
       align-items: center;
       z-index: 2;
 
+      @media screen and (max-width: 830px) {
+        width: 90%;
+        flex-direction: column;
+      }
       .input {
         width: 80%;
         padding: 1rem 2rem;
@@ -52,6 +56,10 @@
         letter-spacing: 0.05rem;
         border: none;
         outline: none;
+
+        @media screen and (max-width: 830px) {
+          width: max-content;
+        }
       }
     }
   }
@@ -60,6 +68,9 @@
     width: 35vw;
     margin: 2rem auto;
 
+    @media screen and (max-width: 830px) {
+      width: 90%;
+    }
     h2 {
       font-weight: $font-weight-2;
       font-size: 3rem;

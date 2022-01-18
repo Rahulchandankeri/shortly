@@ -20,5 +20,9 @@
       text-decoration: none;
       color: $color-white;
     }
+
+    @media screen and (max-width: 930px) {
+      margin: auto;
+    }
   }
 }

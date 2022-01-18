@@ -21,9 +21,18 @@
   background-color: $Dark-Violet-color;
   margin: auto;
 
+  @media screen and (max-width: 930px) {
+    flex-direction: column;
+    display: flex;
+  }
   .footer-content {
     display: flex;
     justify-content: space-evenly;
+
+    @media screen and (max-width: 930px) {
+      flex-direction: column;
+      margin: auto;
+    }
   }
   .logo-footer {
     padding-top: 5rem;
@@ -35,14 +44,22 @@
   .links-footer {
     display: flex;
     color: $color-white;
-
     font-family: inherit;
     list-style: none;
 
+    @media screen and (max-width: 930px) {
+      flex-direction: column;
+    }
     .link-section {
       font-size: 1.8rem;
       list-style: none;
       width: 10vw;
+
+      @media screen and (max-width: 930px) {
+        text-align: center;
+        margin-top: 2rem;
+        width: auto;
+      }
 
       span {
         font-weight: $font-weight-1;
@@ -70,6 +87,7 @@
   }
   .social-connect {
     padding-top: 5rem;
+    padding-bottom: 2.5rem;
 
     ul {
       display: flex;

@@ -20,7 +20,8 @@
     width: 90%;
     justify-content: space-between;
 
-    .Section-left {
+    .Section-left,
+    .section-right {
       display: flex;
       list-style: none;
       outline: none;
@@ -36,32 +37,15 @@
           color: $Dark-Violet-color;
         }
       }
-    }
-  }
-
-  .section-right {
-    margin-right: 7vw;
-
-    a {
-      text-decoration: none;
-      font-size: $font-size;
-      font-weight: $font-weight-1;
-      color: $grayish-color;
-      cursor: pointer;
-      margin: 1vw;
-
-      &:hover {
-        color: $Dark-Violet-color;
-      }
-    }
-    .Signup-btn {
-      padding: 1rem 2rem;
-      border-radius: 10rem;
-      background-color: $primary-color;
-      color: $color-white;
-
-      &:hover {
+      .Signup-btn {
+        padding: 1rem 2rem;
+        border-radius: 10rem;
+        background-color: $primary-color;
         color: $color-white;
+
+        &:hover {
+          color: $color-white;
+        }
       }
     }
   }

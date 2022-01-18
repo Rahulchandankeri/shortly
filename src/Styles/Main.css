@@ -59,7 +59,8 @@ html {
           justify-content: space-between;
 }
 
-.Header .header-links .Section-left {
+.Header .header-links .Section-left,
+.Header .header-links .section-right {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -67,7 +68,8 @@ html {
   outline: none;
 }
 
-.Header .header-links .Section-left a {
+.Header .header-links .Section-left a,
+.Header .header-links .section-right a {
   text-decoration: none;
   font-size: 1.8rem;
   font-weight: 500;
@@ -76,35 +78,21 @@ html {
   margin: 1vw;
 }
 
-.Header .header-links .Section-left a:hover {
+.Header .header-links .Section-left a:hover,
+.Header .header-links .section-right a:hover {
   color: #232127;
 }
 
-.Header .section-right {
-  margin-right: 7vw;
-}
-
-.Header .section-right a {
-  text-decoration: none;
-  font-size: 1.8rem;
-  font-weight: 500;
-  color: #9e9aa7;
-  cursor: pointer;
-  margin: 1vw;
-}
-
-.Header .section-right a:hover {
-  color: #232127;
-}
-
-.Header .section-right .Signup-btn {
+.Header .header-links .Section-left .Signup-btn,
+.Header .header-links .section-right .Signup-btn {
   padding: 1rem 2rem;
   border-radius: 10rem;
   background-color: #2acfcf;
   color: #fff;
 }
 
-.Header .section-right .Signup-btn:hover {
+.Header .header-links .Section-left .Signup-btn:hover,
+.Header .header-links .section-right .Signup-btn:hover {
   color: #fff;
 }
 
@@ -118,6 +106,15 @@ html {
   margin: 15rem auto;
 }
 
+@media screen and (max-width: 930px) {
+  .slider-section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+
 .slider-section .article-left {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -129,6 +126,13 @@ html {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 45%;
+}
+
+@media screen and (max-width: 930px) {
+  .slider-section .article-left {
+    width: auto;
+    text-align: center;
+  }
 }
 
 .slider-section .article-left .main-caption {
@@ -162,15 +166,33 @@ html {
   color: #fff;
 }
 
+@media screen and (max-width: 930px) {
+  .slider-section .article-left .getStarted-btn {
+    margin: auto;
+  }
+}
+
 .slider-section .illustration-container {
   position: relative;
   width: 55%;
+}
+
+@media screen and (max-width: 930px) {
+  .slider-section .illustration-container {
+    width: auto;
+  }
 }
 
 .slider-section .illustration-container img {
   width: auto;
   max-width: 100%;
   margin-left: 8vw;
+}
+
+@media screen and (max-width: 930px) {
+  .slider-section .illustration-container img {
+    margin-left: 0;
+  }
 }
 
 .main-container {
@@ -194,7 +216,7 @@ html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 5rem auto;
+  margin: 6.5rem auto;
 }
 
 .main-container .wrapper .input-container {
@@ -217,6 +239,16 @@ html {
       -ms-flex-align: center;
           align-items: center;
   z-index: 2;
+}
+
+@media screen and (max-width: 830px) {
+  .main-container .wrapper .input-container {
+    width: 90%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .main-container .wrapper .input-container .input {
@@ -249,10 +281,24 @@ html {
   outline: none;
 }
 
+@media screen and (max-width: 830px) {
+  .main-container .wrapper .input-container .shortenLink {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+  }
+}
+
 .main-container .caption-container {
   text-align: center;
   width: 35vw;
   margin: 2rem auto;
+}
+
+@media screen and (max-width: 830px) {
+  .main-container .caption-container {
+    width: 90%;
+  }
 }
 
 .main-container .caption-container h2 {
@@ -271,11 +317,21 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 80%;
+  width: 90%;
   margin: 8rem auto;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+@media screen and (max-width: 930px) {
+  .card-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 13rem;
+  }
 }
 
 .card-container .fat-line {
@@ -283,8 +339,16 @@ html {
   background: #2acfcf;
   width: 80%;
   height: 1rem;
-  position: absolute;
   top: 10rem;
+}
+
+@media screen and (max-width: 930px) {
+  .card-container .fat-line {
+    height: 80%;
+    width: 1rem;
+    margin: auto;
+    left: 50%;
+  }
 }
 
 .card-container .card {
@@ -294,6 +358,13 @@ html {
   width: 30%;
   border-radius: 1rem;
   padding: 4rem;
+}
+
+@media screen and (max-width: 930px) {
+  .card-container .card {
+    width: 90%;
+    margin: 2.5rem auto;
+  }
 }
 
 .card-container .card .icon {
@@ -378,6 +449,12 @@ html {
   color: #fff;
 }
 
+@media screen and (max-width: 930px) {
+  .cta-container .getStarted-btn {
+    margin: auto;
+  }
+}
+
 .cta-container h2 {
   color: #fff;
   font-size: 2.8rem;
@@ -388,6 +465,18 @@ html {
   margin: auto;
 }
 
+@media screen and (max-width: 930px) {
+  .footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 .footer .footer-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -395,6 +484,16 @@ html {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+}
+
+@media screen and (max-width: 930px) {
+  .footer .footer-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: auto;
+  }
 }
 
 .footer .logo-footer {
@@ -417,10 +516,27 @@ html {
   list-style: none;
 }
 
+@media screen and (max-width: 930px) {
+  .footer .links-footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .footer .links-footer .link-section {
   font-size: 1.8rem;
   list-style: none;
   width: 10vw;
+}
+
+@media screen and (max-width: 930px) {
+  .footer .links-footer .link-section {
+    text-align: center;
+    margin-top: 2rem;
+    width: auto;
+  }
 }
 
 .footer .links-footer .link-section span {
@@ -450,6 +566,7 @@ html {
 
 .footer .social-connect {
   padding-top: 5rem;
+  padding-bottom: 2.5rem;
 }
 
 .footer .social-connect ul {

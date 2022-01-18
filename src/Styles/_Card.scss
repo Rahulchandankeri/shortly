@@ -1,17 +1,28 @@
 .card-container {
   position: relative;
   display: flex;
-  width: 80%;
+  width: 90%;
   margin: 8rem auto;
   justify-content: center;
+
+  @media screen and (max-width: 930px) {
+    flex-direction: column;
+    margin-top: 13rem;
+  }
 
   .fat-line {
     position: absolute;
     background: $primary-color;
     width: 80%;
     height: 1rem;
-    position: absolute;
     top: 10rem;
+
+    @media screen and (max-width: 930px) {
+      height: 80%;
+      width: 1rem;
+      margin: auto;
+      left: 50%;
+    }
   }
 
   .card {
@@ -21,6 +32,12 @@
     width: 30%;
     border-radius: 1rem;
     padding: 4rem;
+
+    @media screen and (max-width: 930px) {
+      width: 90%;
+      margin: 2.5rem auto;
+    }
+
     .icon {
       position: absolute;
       top: -4rem;

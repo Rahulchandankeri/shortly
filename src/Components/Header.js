@@ -11,7 +11,8 @@ export default function Header() {
           />
         </svg>
       </header>
-      <nav className="header-links">
+
+      <nav className="header-links" id="mobile">
         <ul className="Section-left">
           <li>
             <a href="#Features">Features</a>
@@ -23,12 +24,16 @@ export default function Header() {
             <a href="#Resources">Resources</a>
           </li>
         </ul>
-        <header className="section-right">
-          <a href="#">Login</a>
-          <a className="Signup-btn" href="#">
-            Signup
-          </a>
-        </header>
+        <ul className="section-right">
+          <li>
+            <a href="#">Login</a>
+          </li>
+          <li>
+            <a className="Signup-btn" href="#">
+              Signup
+            </a>
+          </li>
+        </ul>
       </nav>
     </header>
   );
