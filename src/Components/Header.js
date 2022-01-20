@@ -1,6 +1,15 @@
 import React from "react";
 
 export default function Header() {
+  const respNav = (x) => {
+    const mobileResp = document.querySelector(".mobileResp");
+    const mobileNav = document.querySelector(".mobileNav");
+    if (x.target.classList.toggle("change")) {
+      mobileResp.style.display = "flex";
+    } else {
+      mobileResp.style.display = "none";
+    }
+  };
   return (
     <header className="Header">
       <header className="logo">
@@ -12,7 +21,7 @@ export default function Header() {
         </svg>
       </header>
 
-      <nav className="header-links" id="mobile">
+      <nav className="header-links">
         <ul className="Section-left">
           <li>
             <a href="#Features">Features</a>
@@ -27,6 +36,35 @@ export default function Header() {
         <ul className="section-right">
           <li>
             <a href="#">Login</a>
+          </li>
+          <li>
+            <a className="Signup-btn" href="#">
+              Signup
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div className="mobileNav" onClick={respNav}>
+        <div className="bar1"></div>
+        <div className="bar2"></div>
+        <div className="bar3"></div>
+      </div>
+      <nav className="mobileResp">
+        <ul>
+          <li>
+            <a href="">Features</a>
+          </li>
+          <li>
+            <a href="">Pricing</a>
+          </li>
+          <li>
+            <a href="">Resources</a>
+          </li>
+          <li>
+            <span className="line"></span>
+          </li>
+          <li>
+            <a href="">Login</a>
           </li>
           <li>
             <a className="Signup-btn" href="#">

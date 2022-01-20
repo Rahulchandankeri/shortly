@@ -99,6 +99,10 @@
       li {
         margin-right: 1vw;
 
+        @media screen and (max-width: 930px) {
+          margin-right: 2.2vw;
+        }
+
         svg:hover {
           fill: $primary-color;
         }

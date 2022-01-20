@@ -48,5 +48,103 @@
         }
       }
     }
+    @media screen and (max-width: 930px) {
+      display: none;
+    }
   }
+}
+@media screen and (min-width: 930px) {
+  .mobileResp {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 930px) {
+  .mobileResp {
+    display: none;
+    position: absolute;
+    width: 80%;
+    background-color: $secondary-color;
+    top: 12rem;
+    padding: 2rem;
+    margin: auto;
+    z-index: 10;
+    justify-content: center;
+    border-radius: 1rem;
+    transition: all 0.5s;
+
+    ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      width: 90%;
+
+      li {
+        display: flex;
+        margin-top: 2rem;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        a {
+          text-decoration: none;
+          font-size: $font-size;
+          font-weight: $font-weight-1;
+          color: $color-white;
+          cursor: pointer;
+        }
+      }
+      .Signup-btn {
+        border-radius: 10rem;
+        background-color: $primary-color;
+        color: $color-white;
+        display: flex;
+        width: 100%;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        justify-content: center;
+
+        &:hover {
+          color: $color-white;
+        }
+      }
+      .line {
+        width: 100%;
+        height: 0.1rem;
+        opacity: 0.2;
+        background-color: $color-white;
+      }
+    }
+  }
+}
+.mobileNav {
+  display: inline-block;
+  cursor: pointer;
+  margin-top: auto;
+  margin-bottom: auto;
+
+  @media screen and (min-width: 930px) {
+    display: none;
+  }
+
+  .bar1,
+  .bar2,
+  .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: $grayish-color;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+}
+.change .bar1 {
+  transform: rotate(-45deg) translate(-9px, 6px) !important;
+  background-color: #1a8001;
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  transform: rotate(45deg) translate(-8px, -8px) !important;
+  background-color: #1a8001;
 }

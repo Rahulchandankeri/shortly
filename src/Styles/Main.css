@@ -96,6 +96,131 @@ html {
   color: #fff;
 }
 
+@media screen and (max-width: 930px) {
+  .Header .header-links {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 930px) {
+  .mobileResp {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 930px) {
+  .mobileResp {
+    display: none;
+    position: absolute;
+    width: 80%;
+    background-color: #3b3054;
+    top: 12rem;
+    padding: 2rem;
+    margin: auto;
+    z-index: 10;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border-radius: 1rem;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  .mobileResp ul {
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 90%;
+  }
+  .mobileResp ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 2rem;
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .mobileResp ul li a {
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #fff;
+    cursor: pointer;
+  }
+  .mobileResp ul .Signup-btn {
+    border-radius: 10rem;
+    background-color: #2acfcf;
+    color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .mobileResp ul .Signup-btn:hover {
+    color: #fff;
+  }
+  .mobileResp ul .line {
+    width: 100%;
+    height: 0.1rem;
+    opacity: 0.2;
+    background-color: #fff;
+  }
+}
+
+.mobileNav {
+  display: inline-block;
+  cursor: pointer;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+@media screen and (min-width: 930px) {
+  .mobileNav {
+    display: none;
+  }
+}
+
+.mobileNav .bar1,
+.mobileNav .bar2,
+.mobileNav .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #9e9aa7;
+  margin: 6px 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px) !important;
+          transform: rotate(-45deg) translate(-9px, 6px) !important;
+  background-color: #1a8001;
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px) !important;
+          transform: rotate(45deg) translate(-8px, -8px) !important;
+  background-color: #1a8001;
+}
+
 .slider-section {
   width: 80%;
   display: -webkit-box;
@@ -232,7 +357,7 @@ html {
   background-position: center;
   background: #3b3054;
   background-image: url(../images/bg-boost-desktop.svg);
-  width: 40vw;
+  width: 50%;
   top: -3rem;
   border-radius: 1rem;
   -webkit-box-align: center;
@@ -241,7 +366,7 @@ html {
   z-index: 2;
 }
 
-@media screen and (max-width: 830px) {
+@media screen and (max-width: 930px) {
   .main-container .wrapper .input-container {
     width: 90%;
     -webkit-box-orient: vertical;
@@ -265,15 +390,31 @@ html {
   border-radius: 0.8rem;
 }
 
-.main-container .wrapper .input-container .shortenLink {
+.main-container .wrapper .input-container .shorten-btn-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (max-width: 930px) {
+  .main-container .wrapper .input-container .shorten-btn-container {
+    width: 90%;
+    margin: auto;
+  }
+}
+
+.main-container .wrapper .input-container .shorten-btn-container .shortenLink {
   padding: 1.2rem 2rem;
   background-color: #2acfcf;
   border-radius: 1rem;
   font-size: 1.8rem;
   font-weight: 500;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
   color: #fff;
   cursor: pointer;
   letter-spacing: 0.05rem;
@@ -281,11 +422,159 @@ html {
   outline: none;
 }
 
-@media screen and (max-width: 830px) {
-  .main-container .wrapper .input-container .shortenLink {
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content;
+@media screen and (max-width: 930px) {
+  .main-container .wrapper .input-container .shorten-btn-container .shortenLink {
+    width: 40%;
+    margin-top: 1.2rem;
+  }
+}
+
+.main-container .wrapper .input-container .shortenLinkLoading {
+  padding: 1rem 1.8rem;
+  border-radius: 1rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  color: #fff;
+  cursor: wait;
+  letter-spacing: 0.05rem;
+  border: none;
+  outline: none;
+  background-color: #ff6d6d !important;
+}
+
+.main-container .shortenedLink {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #fff;
+  width: 45%;
+  padding: 1rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: auto auto 1.4rem auto;
+  border-radius: 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 1180px) {
+  .main-container .shortenedLink {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 930px) {
+  .main-container .shortenedLink {
+    width: 90%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 2rem;
+  }
+}
+
+.main-container .shortenedLink .orginalLink {
+  color: #232127;
+  font-size: 1.8rem;
+  font-weight: 500;
+  padding-left: 1rem;
+  width: 50%;
+  text-align: center;
+}
+
+@media screen and (max-width: 930px) {
+  .main-container .shortenedLink .afterLineLink {
+    width: 100%;
+    height: 0.2rem;
+    margin-top: 1rem;
+    z-index: 2;
+    background-color: #bfbfbf;
+    opacity: 0.5;
+  }
+}
+
+.main-container .shortenedLink .linkAndBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.main-container .shortenedLink .linkAndBtn .shortLink {
+  color: #2acfcf;
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-right: 1.5rem;
+}
+
+@media screen and (max-width: 930px) {
+  .main-container .shortenedLink .linkAndBtn .shortLink {
+    margin-bottom: 1.2rem;
+    margin-top: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 930px) {
+  .main-container .shortenedLink .linkAndBtn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.main-container .shortenedLink .linkAndBtn .copy {
+  background-color: #2acfcf;
+  padding: 1rem 3rem;
+  border-radius: 1rem;
+  outline: none;
+  border: none;
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 930px) {
+  .main-container .shortenedLink .linkAndBtn .copy {
+    width: 80%;
+    margin: auto;
+  }
+}
+
+.main-container .shortenedLink .linkAndBtn .copied {
+  background-color: #3b3054;
+  padding: 1rem 3rem;
+  border-radius: 1rem;
+  outline: none;
+  border: none;
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 930px) {
+  .main-container .shortenedLink .linkAndBtn .copied {
+    width: 80%;
+    margin: auto;
   }
 }
 
@@ -295,7 +584,7 @@ html {
   margin: 2rem auto;
 }
 
-@media screen and (max-width: 830px) {
+@media screen and (max-width: 930px) {
   .main-container .caption-container {
     width: 90%;
   }
@@ -310,6 +599,12 @@ html {
   font-size: 1.8rem;
   color: #9e9aa7;
   font-weight: 500;
+}
+
+.Loading {
+  top: 10rem;
+  text-align: center;
+  font-size: 5rem;
 }
 
 .card-container {
@@ -586,6 +881,12 @@ html {
 
 .footer .social-connect ul li {
   margin-right: 1vw;
+}
+
+@media screen and (max-width: 930px) {
+  .footer .social-connect ul li {
+    margin-right: 2.2vw;
+  }
 }
 
 .footer .social-connect ul li svg:hover {
