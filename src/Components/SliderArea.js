@@ -10,7 +10,7 @@ export default function SliderArea() {
           Build your brand's recognition and get detailed insights on how your links are performing
         </p>
         <span className="getStarted-btn mg-sm-top">
-          <a href="#">Get Started</a>
+          <a href="#root">Get Started</a>
         </span>
       </article>
       <div className="illustration-container">

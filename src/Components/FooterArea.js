@@ -1,18 +1,12 @@
 import React from "react";
 
-import fb from "../images/icon-facebook.svg";
-import twitter from "../images/icon-twitter.svg";
-import pinterest from "../images/icon-pinterest.svg";
-
-import insta from "../images/icon-sprite.svg#icon-instagram";
-
 export default function FooterArea() {
   return (
     <>
       <section className="cta-container">
         <h2 className="mg-sm-bottom"> Boost your links today</h2>
         <span className="getStarted-btn mg-sm-bottom ">
-          <a href="#">Get Started</a>
+          <a href="#root">Get Started</a>
         </span>
       </section>
 
@@ -34,13 +28,13 @@ export default function FooterArea() {
                 <span>Features</span>
                 <ul>
                   <li>
-                    <a href="#">Link Shortening</a>
+                    <a href="#root">Link Shortening</a>
                   </li>
                   <li>
-                    <a href="#">Branded Links</a>
+                    <a href="#root">Branded Links</a>
                   </li>
                   <li>
-                    <a href="#">Analytics</a>
+                    <a href="#root">Analytics</a>
                   </li>
                 </ul>
               </section>
@@ -48,13 +42,13 @@ export default function FooterArea() {
                 <span>Resources</span>
                 <ul>
                   <li>
-                    <a href="#">Blog</a>
+                    <a href="#root">Blog</a>
                   </li>
                   <li>
-                    <a href="#">Developers</a>
+                    <a href="#root">Developers</a>
                   </li>
                   <li>
-                    <a href="#">Support</a>
+                    <a href="#root">Support</a>
                   </li>
                 </ul>
               </section>
@@ -62,16 +56,16 @@ export default function FooterArea() {
                 <span>Company</span>
                 <ul>
                   <li>
-                    <a href="#">About</a>
+                    <a href="#root">About</a>
                   </li>
                   <li>
-                    <a href="#">Our Team</a>
+                    <a href="#root">Our Team</a>
                   </li>
                   <li>
-                    <a href="#">Careers</a>
+                    <a href="#root">Careers</a>
                   </li>
                   <li>
-                    <a href="#">Contact</a>
+                    <a href="#root">Contact</a>
                   </li>
                 </ul>
               </section>

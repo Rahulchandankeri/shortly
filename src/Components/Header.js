@@ -3,7 +3,7 @@ import React from "react";
 export default function Header() {
   const respNav = (x) => {
     const mobileResp = document.querySelector(".mobileResp");
-    const mobileNav = document.querySelector(".mobileNav");
+
     if (x.target.classList.toggle("change")) {
       mobileResp.style.display = "flex";
     } else {
@@ -35,10 +35,10 @@ export default function Header() {
         </ul>
         <ul className="section-right">
           <li>
-            <a href="#">Login</a>
+            <a href="#root">Login</a>
           </li>
           <li>
-            <a className="Signup-btn" href="#">
+            <a className="Signup-btn" href="#root">
               Signup
             </a>
           </li>
@@ -52,22 +52,22 @@ export default function Header() {
       <nav className="mobileResp">
         <ul>
           <li>
-            <a href="">Features</a>
+            <a href="#root">Features</a>
           </li>
           <li>
-            <a href="">Pricing</a>
+            <a href="#root">Pricing</a>
           </li>
           <li>
-            <a href="">Resources</a>
+            <a href="#root">Resources</a>
           </li>
           <li>
             <span className="line"></span>
           </li>
           <li>
-            <a href="">Login</a>
+            <a href="#root">Login</a>
           </li>
           <li>
-            <a className="Signup-btn" href="#">
+            <a className="Signup-btn" href="#root">
               Signup
             </a>
           </li>

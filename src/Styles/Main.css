@@ -484,8 +484,9 @@ html {
   font-size: 1.8rem;
   font-weight: 500;
   padding-left: 1rem;
-  width: 50%;
+  width: auto;
   text-align: center;
+  overflow: auto;
 }
 
 @media screen and (max-width: 930px) {
@@ -509,7 +510,7 @@ html {
           align-items: center;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
-          justify-content: end;
+          justify-content: flex-end;
 }
 
 .main-container .shortenedLink .linkAndBtn .shortLink {

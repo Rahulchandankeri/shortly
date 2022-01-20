@@ -111,8 +111,9 @@
       font-size: $font-size;
       font-weight: $font-weight-1;
       padding-left: 1rem;
-      width: 50%;
+      width: auto;
       text-align: center;
+      overflow: auto;
     }
     .afterLineLink {
       @media screen and (max-width: 930px) {
@@ -128,7 +129,7 @@
       display: flex;
       width: 50%;
       align-items: center;
-      justify-content: end;
+      justify-content: flex-end;
       .shortLink {
         color: $primary-color;
         font-size: $font-size;

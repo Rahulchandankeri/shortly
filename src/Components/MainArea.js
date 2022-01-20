@@ -20,7 +20,7 @@ export default function MainArea() {
   const addLinks = (e) => {
     e.preventDefault();
     if (!inputLink) return;
-    if (inputLink == Number) {
+    if (inputLink === Number) {
       setCurrentinputLink("");
       return alert("Invalid link");
     }
@@ -70,7 +70,7 @@ export default function MainArea() {
         <span className="fat-line"></span>
         <div className="card card--1">
           <div className="icon">
-            <img src={cardico1} />
+            <img src={cardico1} alt="Brand Recognition" />
           </div>
           <h4 className="mg-sm-bottom">Brand Recognition</h4>
           <p>
@@ -80,7 +80,7 @@ export default function MainArea() {
         </div>
         <div className="card card--2">
           <div className="icon">
-            <img src={cardico2} />
+            <img src={cardico2} alt="Detailed Records" />
           </div>
           <h4 className="mg-sm-bottom">Detailed Records</h4>
           <p>
@@ -90,7 +90,7 @@ export default function MainArea() {
         </div>
         <div className="card card--3">
           <div className="icon">
-            <img src={cardico3} />
+            <img src={cardico3} alt="Fully Customizable" />
           </div>
           <h4 className="mg-sm-bottom">Fully Customizable</h4>
           <p>
