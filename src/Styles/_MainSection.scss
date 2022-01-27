@@ -65,7 +65,6 @@
           outline: none;
 
           @media screen and (max-width: 930px) {
-            width: 40%;
             margin-top: 1.2rem;
           }
         }
@@ -78,7 +77,7 @@
         font-weight: $font-weight-1;
         width: max-content;
         color: $color-white;
-        cursor: wait;
+        display: none;
         letter-spacing: 0.05rem;
         border: none;
         outline: none;
@@ -203,5 +202,6 @@
 .Loading {
   top: 10rem;
   text-align: center;
-  font-size: 5rem;
+  color: rgb(255, 75, 75);
+  font-size: 2.5rem;
 }

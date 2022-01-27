@@ -424,7 +424,6 @@ html {
 
 @media screen and (max-width: 930px) {
   .main-container .wrapper .input-container .shorten-btn-container .shortenLink {
-    width: 40%;
     margin-top: 1.2rem;
   }
 }
@@ -438,7 +437,7 @@ html {
   width: -moz-max-content;
   width: max-content;
   color: #fff;
-  cursor: wait;
+  display: none;
   letter-spacing: 0.05rem;
   border: none;
   outline: none;
@@ -605,7 +604,8 @@ html {
 .Loading {
   top: 10rem;
   text-align: center;
-  font-size: 5rem;
+  color: #ff4b4b;
+  font-size: 2.5rem;
 }
 
 .card-container {
