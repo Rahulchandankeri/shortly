@@ -60,7 +60,7 @@ export default function MainArea() {
           </div>
         </div>
       </div>
-      {loading && <p className="Loading">Please wait</p>}
+      {loading && <p className="Loading">Please wait. Refresh if I am taking more time</p>}
       <List itemList={itemList} />
       <div className="caption-container">
         <h2 className="mg-sm-bottom">Advanced Statistics</h2>
