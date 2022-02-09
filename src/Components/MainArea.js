@@ -2,6 +2,8 @@ import React from "react";
 import cardico1 from "../images/icon-brand-recognition.svg";
 import cardico2 from "../images/icon-detailed-records.svg";
 import cardico3 from "../images/icon-fully-customizable.svg";
+import spinner from "../images/Spinner.svg";
+
 import { useState } from "react";
 import List from "../Components/Links";
 
@@ -60,7 +62,7 @@ export default function MainArea() {
           </div>
         </div>
       </div>
-      {loading && <p className="Loading">Please wait. Refresh if I am taking more time</p>}
+      {loading && <img className="spinner" src={spinner} alt="Spinner" />}
       <List itemList={itemList} />
       <div className="caption-container">
         <h2 className="mg-sm-bottom">Advanced Statistics</h2>
